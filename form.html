@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>表单</title>
+</head>
+<body>
+    ​	<form action="save.php" method="post">
+    ​    ​	<label for="head">头像</label>
+    ​       ​ ​	<input type="file" name="head" value="file"><br/>
+    ​    ​	<label for="name">昵称</label>
+    ​    ​	    ​	<input type="text" name="name"/><br/>
+    ​    ​	<label for="education">学历</label>
+    ​    ​    ​	<select name="education">
+    ​    ​    ​    ​	<option value="1">大专</option>
+    ​    ​    ​    ​	<option value="2">本科</option>
+    ​    ​    ​	</select><br/>
+    ​    ​	<label for="sex">性别</label>
+    ​    ​    ​	<input type="radio" name="sex" value="man" />
+    ​    ​    ​	<label for="sex">男</label>
+    ​    ​    ​	<input type="radio" name="sex" value="woman" />
+    ​    ​    ​	<label for="sex">女</label><br/>
+    ​    ​	<label for="hobby">爱好</label>
+    ​    ​    ​	<input type="checkbox" name="hobby" value="movie" checked="checked"/>
+    ​    ​    ​	<label for="hobby">电影</label>
+    ​    ​    ​	<input type="checkbox" name="hobby" value="photo"/>
+    ​    ​    ​	<label for="hobby">摄影</label>
+    ​    ​    ​	<input type="checkbox" name="hobby" value="music"/>
+    ​    ​    ​	<label for="hobby">音乐</label>
+    ​    ​    ​	<input type="checkbox" name="hobby" value="read" checked="checked"/>
+    ​    ​    ​	<label for="hobby" >阅读</label><br/>
+    ​    ​	<label for="area">签名</label>
+    ​    ​	    ​	<textarea rows="3" name="area" value="text"></textarea><br/>
+    ​    ​	<button type="submit">保存</button>
+    ​	</form>
+
+</body>
+</html>
