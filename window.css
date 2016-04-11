@@ -5,23 +5,23 @@
 	<title>Document</title>
 	<style type="text/css">
 		*{margin: 0;padding: 0}
-		#win{position: fixed;box-sizing: border-box;width: 302px;border-radius: 5px;border: solid 1px #cccccc;position: relative;}
-		#tit{display:block;padding: 0 20px;height: 40px;font:14px "microsoft";text-align: center;line-height: 40px;background-color: #eee;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
-		#con{padding: 20px;background-color: #fff;font:12px "宋体"}
-		p{margin-bottom: 20px;line-height: 1.5em;}
-		#ensure{display:block;margin:0 auto;text-align:center;width:80px;height: 30px;background-color: rgb(46,126,203);color: white;border-radius: 5px;text-decoration: none;line-height: 30px;}
-		#x{position: absolute;top: 10px;right: 10px;cursor: pointer;}
+		.m-win{position: fixed;box-sizing: border-box;width: 302px;border-radius: 5px;border: solid 1px #cccccc;position: relative;}
+		.m-win .m-tt{display:block;padding: 0 20px;height: 40px;font:14px "microsoft";text-align: center;line-height: 40px;background-color: #eee;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+		.m-con{padding: 20px;background-color: #fff;font:12px "宋体"}
+		.m-con p{margin-bottom: 20px;line-height: 1.5em;}
+		.m-con .u-btn{display:block;margin:0 auto;text-align:center;width:80px;height: 30px;background-color: rgb(46,126,203);color: white;border-radius: 5px;text-decoration: none;line-height: 30px;}
+		.x{position: absolute;top: 10px;right: 10px;cursor: pointer;}
 	</style>
 </head>
 <body>
-	<div id="win">
-		<div id="bar">
-			<span id="tit">标题栏</span>
-			<img id="x" src="/x.png">
+	<div class="m-win">
+		<div class="bar">
+			<span class="m-tt">标题栏</span>
+			<img class="x" src="/x.png">
 		</div>
-		<div id="con">
+		<div class="m-con">
 			<p>内容段落内容区：由一个段落和一个按钮组成。段落：行高1.5倍。
 			</p>
-			<a href="#" id="ensure" value="">确定</a>
+			<a href="#" class="u-btn" value="">确定</a>
 </body>
 </html>
