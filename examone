@@ -1,0 +1,111 @@
+//1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网易新闻</title>
+	<style type="text/css">
+		*{padding: 0;margin: 0}
+		.new:after{content: ",";display: block;clear: both;height: 0;overflow: hidden;visibility: hidden;}
+		.im{background-color: #0079BE;float: left;width: 100px; height: 100px;}
+		.text{font-family: "宋体";height: 100px;line-height: 25px;overflow: hidden;padding-left: 15px;}
+		.tt{font-weight: bold;font-size: 16px;color: #000;overflow: hidden; white-space: nowrap;text-overflow: ellipsis;}
+		.con{font-size: 14px;color: #666;}
+	</style>
+</head>
+<body>
+<div class="new">
+	<img class="im" src="http://163.com/x.jpg"  alt="图片新闻">
+	<div class="text">
+		<h2 class="tt" title="标题文字标题文字标题文字">标题文字标题文字标题文字</h2>
+		<p class="con">段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字段落文字</p>
+	</div>
+</div>
+</body>
+</html>
+
+//2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录表单</title>
+	<style type="text/css">
+		*{padding: 0;margin: 0;}
+		.tt{font:bold 14px "microsoft yahei";line-height: 16px;margin-bottom: 15px;}
+		.user-text,.pass-text{display: inline-block;width: 60px; font: 12px "宋体";vertical-align: middle;}
+		.user,.pass{box-sizing: border-box; width: 200px;height: 20px;border: 1px solid #ddd;margin-bottom: 15px;}
+		.but{width: 40px;height: 20px;background-color: blue;color: white;font:12px "宋体";text-align: center;margin-left: 68px;line-height: 20px;}
+	</style>
+</head>
+<body>
+<div>
+	<h2 class="tt">登录网易通行证</h2>
+	<form method="post" action="/login">
+		<div class="use">
+			<label class="user-text" for="user">用户名：</label>
+			<input type="text" class="user" />
+		</div>
+		<div>
+			<label class="pass-text" for="pass">密码：</label>
+			<input type="text" class="pass" />
+		</div>
+		<div class="but">登录</div>
+	</form>
+</div>
+</body>
+</html>
+
+//3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<table border=1px;>
+		<caption>照片冲印价格详情</caption>
+		<thead>
+			<tr><th rowspan="2">相片尺寸</th><th colspan="2">相纸（元/张）</th></tr>
+			<tr><th>富士</th><th>柯达</th></tr>
+		</thead>
+		<tbody>
+			<tr><th>6寸</th><td>0.45</td><td>0.6</td></tr>
+			<tr><th>10寸</th><td>3.89</td><td>5</td></tr>
+		</tbody>
+		<tfoot>
+			<tr><td colspan="3">运费8元/单，满99元免运费</td></tr>
+		</tfoot>
+	</table>
+</body>
+</html>
+
+//4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>menu</title>
+	<style type="text/css">
+		*{padding: 0;margin: 0;}
+		.text{font:12px "宋体";color: #000;}
+		.but{width: 50px;height: 28px; background-color:#eee;border: 1px solid #ddd; text-align: center;line-height: 28px;}
+		.menu{background-color: #fff;margin-top: 1px;list-style: none;}
+		.menu li{width: 60px; height: 30px; padding: 0 10px;border: 1px solid #ddd;line-height: 30px;}
+		.menu li:hover{background-color: #ddd;}
+	</style>
+</head>
+<body>
+	<div class="text">
+		<div class="but">按钮</div>
+		<ul class="menu">
+			<li>下拉菜单项</li>
+			<li>下拉菜单项</li>
+			<li>下拉菜单项</li>
+			<li>下拉菜单项</li>
+		</ul>
+	</div>
+</body>
+</html>
+
