@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>云阅读的畅销书排行榜</title>
+</head>
+<body>
+   <div>
+    	<ul type="none">
+			<li><h3><strong>图书畅销榜</strong></h3></li>
+    ​    	<li title="当我足够好，才会遇见你" >1<a href="#" style="text-decoration: none;color: red"> 当我足够好，才会遇见你</a></li>
+    ​    	<li title="皮囊" >2<a href="#" style="text-decoration: none;color: black"> 皮囊</a></li>
+    ​    	<li title="李光耀论中国与世界" >3<a href="#" style="text-decoration: none;color: black"> 李光耀论中国与世界</a></li>
+    ​    	<li title="乖，摸摸头" >4<a href="#" style="text-decoration: none;color: black"> 乖，摸摸头</a></li>
+    ​    	<li title="男女内参" >5<a href="#" style="text-decoration: none;color: black"> 男女内参</a></li>
+    	</ul>
+   </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>表格</title>
+</head>
+<body>
+    	<table class="table">
+        	<caption><b>运费详情<b></caption>
+        	<thead>
+        	    ​	<tr><th>区域</th><th>寄达地</th><th>首重（元/1000g）</th><th>续重（元/1000g）</th></tr>
+        	</thead>
+        	<tbody>
+        	    ​	<tr><th rowspan="2">一区</th><td>浙江、上海、江苏</td><td>6</td><td>1</td></tr>
+        	    ​	<tr><td>江西、安徽</td><td>7</td><td>1</td></tr>
+        	    ​	<tr><th>二区</th><td>吉林、黑龙江、云南</td><td>10</td><td>6</td></tr>
+​	    ​    ​    ​	<tr><th>三区</th><td>新疆、西藏</td><td>15</td><td>10</td></tr>
+        	</tbody>
+    	</table>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>表单</title>
+</head>
+<body><form action="save.php" method="post">
+        <div>
+            <label for="head">头像</label><input type="file" name="head" value="file">
+        </div>
+        <div>
+            <label for="name">昵称</label><input type="text" name="name"/>
+        </div>
+        <div>
+            <label for="education">学历</label>
+            <select name="education">
+                <option value="1">大专</option>
+                <option value="2">本科</option>
+            </select>
+        </div>
+        <div>
+             <label for="sex">性别</label>
+             <input type="radio" name="sex" value="man" id="sex_1"/><label for="sex_1">男</label>
+             <input type="radio" name="sex" value="woman" id="sex_2" /><label for="sex_2">女</label>
+        </div>
+        <div>
+              <label for="hobby">爱好</label>
+              <input type="checkbox" name="hobby" value="movie" id="ho_1" checked="checked"/><label for="ho_1">电影</label>
+              <input type="checkbox" name="hobby" value="photo" id="ho_2"/><label for="ho_2">摄影</label>
+              <input type="checkbox" name="hobby" value="music" id="ho_3"/><label for="ho_3">音乐</label>
+              <input type="checkbox" name="hobby" value="read" id="ho_4" checked="checked"/><label for="ho_4" >阅读</label>
+        </div>
+        <div>
+        	<label for="area">签名</label><textarea rows="3" name="area" value="text"></textarea>
+        </div>
+        <div>
+        	<button type="submit">保存</button>
+        </div>
+    	</form>
+</body>
+</html>
