@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layout</title>
+    <style type="text/css">
+    /*1*/
+   /* *{padding: 0;margin: 0;height: 100px;}
+    .parent{width: 810px;margin: 0 auto;}
+    .parent .side{width: 200px; background-color: red;float: left;}
+    .parent .main{width: 600px;background-color: blue;float: right;}
+    .parent:after{content:'.';display: block;clear: both;height: 0;overflow: hidden;visibility: hidden;}*/
+    /*2*/
+    .tt{font:bold 16px/25px "宋体";color:black;width: 200px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+    /*3*/
+    .slide{width: 200px;height: 100px;background-color: rgb(189,215,238);position: relative;}
+    .slide .pointer{position: absolute;bottom: 10px;right: 10px;}
+    .slide .pointer i{display:inline-block; width:10px;height: 10px; border-radius: 50%;background-color: #000;margin-left: 5px;}
+    .slide .pointer .current{background-color: #fff;}
+    </style>
+</head>
+<body>
+<!-- <div class="parent"> 
+    <div class="side">侧栏</div>
+    <div class="main">主栏</div>
+</div> -->
+    <h2 class="tt" title="标题文字标题文字标题文字标题文字">标题文字标题文字标题文字标题文字</h2>
+<div class="slide">
+        <!-- 图片省略 -->
+        <!-- 以下是指示器 -->
+    <div class="pointer"><i class="current"></i><i></i><i></i></div>
+</div>
+
+</body>
+</html>
