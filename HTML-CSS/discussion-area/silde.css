@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>轮播头图</title>
+	<style>
+		*{
+			margin: 0;padding: 0;
+		}
+		.is{position: relative;width: 480px;margin: 50px auto;}
+		/*父元素为子元素相对定位，设定宽度，设置在浏览器位置*/
+		.is img{display: block;}
+		.is .title{position: absolute;bottom: 0;margin: 0;width: 100%;line-height: 45px;background-color: #000;opacity: 0.7;}
+		/*文字背景位置设置*/
+		.is .title a{margin-left: 20px;color: #fff;text-decoration: none;}
+		/*文字位置，样式设置*/
+		.is .controls{position: absolute;bottom: 18px;right: 10px;line-height: 10px;}
+		/*按键位置设置*/
+		.is .controls span{display: inline-block;width: 10px;margin: auto 1px;height: 10px;border-radius: 10px;background-color: gray;}
+		/*样式设置*/
+		.is .controls span.cur{background-color: #fff;}
+		/*当前样式设置*/
+		
+	</style>
+</head>
+<body>
+	<div class="is">
+	  <img src="att.jpg">
+	  <p class="title"><a href="#">轮播头图</a></p>
+	  <div class="controls">
+	    <span></span><span class="cur"></span><span></span><span></span><span></span>
+	  </div>
+	</div>
+</body>
+</html>
