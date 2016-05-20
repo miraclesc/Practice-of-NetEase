@@ -1,7 +1,16 @@
 //函数myType用于根据输入参数返回相应的类型信息
-function myType(param) {
-	return Object.prototype.toString.call(param).slice(8,-1).toLowerCase();
-}
+/*myType (1);		返回值： "number"
+	myType (false);		返回值： "boolean"
+	myType ({});		返回值： "object"
+	myType ([]);		返回值：" Array"
+	myType (function(){});	返回值："function"
+	myType (new Date());	返回值： "Date"*/
+function myType(param){
+if(typeof param=="object"){
+	if((Object.prototype.toString.call(param).slice(8,-1))=="Object") return "object";
+	else if return Object.prototype.toString.call(param).slice(8,-1);
+ 	else return typeof param;
+ }
 
 /*函数search用于在一个已排序的数字数组中查找指定数字。
 语法如下：
@@ -32,11 +41,19 @@ function search(arr,dst) {
 	formatDate(date, "yyyy-MM-dd HH");		返回值： "2001-09-11 08"
 */
 function formatDate(date,pattern){
-	pattern=pattern.replace(/yyyy/,date.getFullYear());
-	pattern=pattern.replace(/MM/,date.getMonth()+1);
-	pattern=pattern.replace(/dd/,date.getDate());
-	pattern=pattern.replace(/HH/,date.getHours());
-	pattern=pattern.replace(/mm/,date.getMinutes());
-	pattern=pattern.replace(/ss/,date.getSeconds());
+	pattern=pattern.replace(/yyyy/,ADD(date.getFullYear()));
+	pattern=pattern.replace(/MM/,ADD(date.getMonth()+1));
+	pattern=pattern.replace(/dd/,ADD(date.getDate()));
+	pattern=pattern.replace(/HH/,ADD(date.getHours()));
+	pattern=pattern.replace(/mm/,ADD(date.getMinutes()));
+	pattern=pattern.replace(/ss/,ADD(date.getSeconds()));
+	function ADD(num) {
+      if ( num < 10)  {
+        return  "0" + num;
+      } else{
+        return num
+      };
+      //时间不足2位数的时候前面添加0
+    }
 	return pattern;
 }
