@@ -43,3 +43,29 @@ var style = function getElementStyle(element,cssPropertyName){
     else{
         return element.currentStyle[cssPropertyName];
     }
+    
+   
+//Ajax请求GET方法的封装
+    //使用表单编码数据发起一个HTTP GET请求
+    function getData(url, options, callback){
+                var request = new XMLHttpRequest();
+                request.open = open("GET", url + "?" + encodeFormData(options)); //获取指定的URL
+                request.onreadystatechange = function(){
+                    if(request.readyState === 4 && callback) callback(request); 
+                };
+                request(null);
+            }
+    //HTTP请求编码对象
+    function encodeFormData(data){
+                if (!data) return "";
+                var pairs = [];
+                for(var name in data){
+                    if (!data.hasOwnProperty(name)) continue; //跳过继承属性
+                    if (typeof data[name] === "function") continue; //跳过方法
+                    var value = data[name].toString();
+                    name = encodeURIComponent(name.replace("%20","+")); //编码名字
+                    value = encodeURIComponent(value.replace("%20","+")); //编码值
+                    pairs.push(name + "=" + value);
+                }
+                return pairs.join("&");
+            }
