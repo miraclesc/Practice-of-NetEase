@@ -81,3 +81,17 @@ function post(url, data, callback){
             request.setRequestHeader("Content-Type","application/json");
             request.send(JSON.stringify(data));
         }
+
+//用canvas画一个圆
+//在一个300*300的canvas（id为“myCanvas“）上，以坐标点（150, 150）为圆心，100为半径，画一个边框色为#4d4e53，填充色为#6a83ff的圆。
+<canvas id="myCanvas" width="400px" height="400px"></canvas>
+    <script type="text/javascript">
+        var canvas = document.getElementById('myCanvas');
+        var c = canvas.getContext('2d');
+        c.beginPath();
+        c.arc(150, 150, 100, 0, 2*(Math.PI));
+        c.fillStyle = "#6a83ff";
+        c.fill();
+        c.strokeStyle = "#4d4e53";
+        c.stroke();
+    </script>
