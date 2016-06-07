@@ -1,0 +1,23 @@
+//实现一个幻灯布局
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        *{padding: 0px; margin: 0px;}
+        .slide{position: relative; display: inline-block;}
+        .slide img{display: block;}
+        .slide .pointer{position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);}
+        .slide .pointer i{width: 10px; height: 10px; border-radius: 50%; background-color: #000; display: inline-block; margin: 0 5px;}
+    </style>
+</head>
+<body>
+<div class="slide">
+    <!-- 以下是图片-->
+    <img src="http://imgsize.ph.126.net/?enlarge=true&imgurl=http://img1.ph.126.net/F-EsCWeToGH-Bcwe243xeg==/6608930198585822920.png_230x130x1x95.png">
+    <!-- 以下是指示器 -->
+    <div class="pointer"><i></i><i></i><i></i></div>
+</div>
+</body>
+</html>
