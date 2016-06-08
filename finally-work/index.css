@@ -1,0 +1,124 @@
+/* 重置 */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:normal;}
+del,ins,u,s,a{text-decoration:none;}
+a:hover{text-decoration: underline;}
+body,textarea,input,button,select,keygen,legend,a{font:12px/1.14 "microsofo yahei";color:#000;outline:0;}
+body{background:#fff;}
+/* 背景图 */
+.m-ad span, .u-close, .u-btn-yes, .u-sch, .u-sch:hover, .img{background:url(image/sprite.png) no-repeat 9999px 9999px;}
+.u-weibo span{background:url(image/weibo.png) no-repeat 9px;}
+.m-tt, .m-cprt h2{background:url(image/tt.png) no-repeat 9999px 9999px;}
+.m-log .u-btn{background:url(image/log.png) no-repeat;}
+/* 布局 */
+.g-top{height:36px;background-color:#f3f3f3;}
+.g-hd{height:89px;position:relative;}
+.g-box{height:1551px;background-color:#f8f8f8;}
+.g-sd{position:relative;float:right;width:225px;margin-left:-225px;}
+.g-mn{float:left;width:100%;}
+.g-mnc{margin-right:246px;}		
+.g-ft{height:280px;background-color:#2c3339;}
+/* 模块 */
+/* 顶部通知条 */
+.m-ad{line-height:36px;color:#333;}
+.m-ad p, .m-ad span{display:inline-block;}
+.m-ad a{color:#21a557;}
+.m-ad button{float:right;height:36px;line-height:36px;background:none;border:0;}
+.m-ad span{width:16px;height:10px;vertical-align:middle;background-position:-9px -37px;}
+/* 头部 */
+.m-tt{position:absolute;top:31px;width:236px;height:22px;text-indent:-9999px;background-position:-7px -15px;}
+.m-fan{position:absolute;top:31px;float:left;margin-left:269px;}
+.m-fan .u-btn, .m-fan p,.m-nav li, .m-nav a{display:inline-block;}
+.m-fan button{width:54px;height:21px;line-height:21px;border:0;border-radius:2px;background:none;background-color:#21a557;color:#fff;}
+.m-fan button span{vertical-align:middle;}
+.m-fan button:hover{background-color:#2fb556;}
+.m-fan .u-btn span{font-weight:bold;font-size:16px;}
+.m-fan p{padding:0 14px;font-family:"SimSum";color:#666;}
+.u-sch{float:right;width:20px;height:20px;margin-top:35px;margin-right:14px;border:0;background-position:-27px -4px;}
+.u-sch:hover{background-position:-28px -32px;}
+.m-nav{line-height:89px;}
+.m-nav li{float:right;margin-right:55px;}
+.m-nav li:first-child{margin-right:30px;}
+.m-nav li a{font-size:16px;color:#666;}
+.m-nav li a:hover{text-decoration:none;color:#39a030}
+/* 轮播图 */
+.m-sld{position:relative;display:inline-block;width:100%;height:460px;overflow:hidden;}
+.m-sld img{position:absolute;left:50%;transform:translateX(-50%);}
+.m-sld .u-dots{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);}
+.m-sld .u-dots li{display:inline-block;margin:0 5px;width:10px;height:10px;border-radius:50%;background-color:#fff;}
+.m-sld .u-dots .z-crt{background-color:#333;}
+/* 课程介绍 */
+.m-menu li{position:relative;float:left;padding:60px 0px 60px 108px;width:240px;height:175px;}
+.study, .mooc{margin-left:77px;}
+.m-menu .img{position:absolute;top:69px;left:8px;width:80px;height:80px;}
+.m-menu .img1{background-position:-2px -63px;}
+.m-menu .img2{background-position:-87px -63px;}
+.m-menu .img3{background-position:-172px -63px;}
+.m-menu h2{margin-bottom:15px;color:#333;font-size:21px;}
+.m-menu p{color:#666;font-size:14px;line-height:24px;}
+.m-menu a{display:inline-block;padding-top:30px;color:#39a030;font-size:14px;}
+/* 工作环境 */
+.m-work{position:relative;display:inline-block;width:100%;height:220px;overflow:hidden;}
+.m-work img{position:absolute;left:50%;transform:translateX(-50%);}
+/* tab */
+.m-tab{margin:81px 561px 27px 1px;box-shadow:0 1px 0 1px #ecebeb;}
+.m-tab li{display:inline-block;float:left;border-bottom:1px solid #d4d3d3;background-color:#fff;text-align:center;}
+.m-tab li a{display:inline-block;width:200px;height:50px;line-height:50px;font-size:19px;}
+.m-tab li .z-crt{background-color:#39a030;color:#cae6c8;}
+.m-tab li a:hover{text-decoration:none;}
+/* 机构介绍 */
+.m-video{width:223px;height:229px;margin-top:84px;border-bottom:1px solid #d4d3d3;box-shadow:0 1px 0 1px #ecebeb;background-color:#fff;}
+.m-video h3{height:55px;line-height:55px;padding-left:11px;border-bottom:1px solid #ddd;font-size:16px;color:#333;}
+.m-video h4{margin:21px 0 9px 22px;font-size:13px;color:#666;}
+.m-video video{margin-left:22px;}
+/* 最热排行 */
+.m-top{width:223px;height:778px;margin-top:19px;border-bottom:1px solid #d4d3d3;box-shadow:0 1px 0 1px #ecebeb;background-color:#fff;}
+.m-top h3{padding:20px;font-size:17px;color:#333;border-bottom:1px solid #eee;}
+/* 尾部 */
+.m-cprt{display:inline-block;float:left;margin:90px 50px;}
+.m-cprt h2{width:240px;height:25px;text-indent:-9999px;background-position:-6px -64px;}
+.m-cprt p{margin-top:22px;line-height:24px;color:#abadb0;}
+.m-other .more, .m-other .us, .m-other .link{float:right;}
+.m-other div{margin-top:80px;}
+.m-other .more{margin-right:6px;}
+.m-other .us{margin-right:72px;}
+.m-other .link{margin-right:98px;}
+.m-other h4{margin-bottom:8px;font-size:13px;color:#8b8f92;}
+.m-other a{font-size:14px;line-height:28px;color:#8b8f92;}
+.m-other .u-weibo span{display:inline-block;width:32px;height:17px;vertical-align:text-top;}
+/* 登录窗口 */
+.m-mask{position:fixed;top:0;left:0;z-index:100;width:100%;height:100%;background-color:#000;opacity:0.8;}
+.m-log{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:387px;height:288px;z-index:200;background-color:#fff;}
+.m-log .u-close{display:inline-block;float:right;width:24px;height:24px;border:0;background-position:-58px -1px;}
+.m-log h3{margin:20px 39px;font-size:18px;color:#444;}
+.m-log .u-ipt{width:284px;height:43px;margin-left:39px;margin-bottom:15px;padding-left:9px;border:1px solid #dfdfdf;box-shadow:inset 2px 2px #f1f1f1;font-size:16px;background-color:#fafafa;}
+.m-log .u-btn{width:295px;height:48px;margin-left:39px;margin-top:14px;border:0;font-size:16px;color:#fff;}
+/* 功能 */
+.f-dn{display:none;}
+.f-wm{width:1208px;margin:0 auto;}
+.f-cb:after{content:".";display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
+/* 响应式 */
+@media screen and(max-width:1205px){
+	.f-wm{width:965px;}
+	.m-menu li{width:173px;padding-left:102px;}
+	.study, .mooc{margin-left:70px;}
+	.m-tab{margin-right:318px;}
+	.m-cprt {margin-left:6px;}
+}
+/* 在浏览器宽度拉到965px一下时，会出现两个bug，一是图片为窗口宽度，其他宽度为965px，二是背景色问题，用如下方案解决该问题 */
+@media screen and(max-width:965px){
+}
