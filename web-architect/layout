@@ -1,0 +1,25 @@
+//两侧定宽，中间自适应
+	<style type="text/css">
+		.parent{width:100%;height:200px;border:1px solid red;}
+		.parent:after{content:'.';display:block;clear:both;height:0;overflow:hidden;visibility:hidden;}
+		.box1,.box3{position:relative;float:left;width:100px;margin:0 -100px 0 0;}
+		.box3{float:right;width:100px;margin:0 0 0 -100px;}
+		.box2{float:left;width:100%;}
+		.box2c{margin:0 110px;}
+	</style>
+</head>
+<body>
+<div class="parent">
+    <div class="box1">
+        <p>左侧定宽</p>
+    </div>
+    <div class="box2">
+        <div class="box2c">
+            <p>中间自适应</p>
+        </div>
+    </div>
+    <div class="box3">
+        <p>右侧定宽</p>
+    </div>
+</div>
+</body>
