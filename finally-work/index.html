@@ -18,7 +18,7 @@
 			<div class="m-ad">
 				<p>网易云课堂微专业，帮助你掌握专业技能，令你求职或加薪多一份独特优势！&nbsp;</p>
 				<a href="http://study.163.com/smartSpec/intro.htm#/smartSpecIntro">立即查看&gt;</a>
-				<button class="f-cb z-close"><span></span>不再提醒</button>
+				<button class="z-close"><span></span>不再提醒</button>
 			</div>
 		</div>
 	</div>
@@ -36,11 +36,11 @@
 				<div class="u-tips f-dn">
 					<span class="u-yet"></span><span>已关注</span><span class="u-bar">|</span><a class="u-cancel">取消</a>
 				</div>
-				<p>粉丝<span class="j-num">45</span></p>
+				<p>粉丝<span class="j-fans">45</span></p>
 			</div>
 			<button class="f-cb u-sch"></button>
 			<ul class="m-nav f-cb">
-				<li class="mooc"><a href="http://www.icourse163.org/">中国大学MOOC</a></li>
+				<li class="edu"><a href="http://www.icourse163.org/">中国大学MOOC</a></li>
 				<li><a href="http://study.163.com/">云课堂</a></li>
 				<li><a href="http://open.163.com/">网易公开课</a></li>
 			</ul>
@@ -71,13 +71,13 @@
 						<p>推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</p>
 						<a href="http://open.163.com/">了解更多&gt;</a>
 					</li>
-					<li>
+					<li class="study">
 						<div class="img img2"></div>
 						<h2>云课堂</h2>
 						<p>网易旗下大型在线学习平台，该平台面向学习者提供海量免费、优质课程,创新的个性化学习体验，自由开放的交流互动环境。</p>
 						<a href="http://study.163.com/">了解更多&gt;</a>
 					</li>
-					<li>
+					<li class="mooc">
 						<div class="img img3"></div>
 						<h2>中国大学MOOC</h2>
 						<p>是爱课程网携手云课堂打造的在线学习平台，每一个有提升愿望的人,都可以在这里学习中国最好的大学课程，学完还能获得认证证书。</p>
@@ -175,11 +175,11 @@
 	<div class="m-log f-dn">
 		<button class="z-close f-cb"></button>
 		<h3>登录网易云课堂</h3>
-		<form method="get" action="http://study.163.com/webDev/login.htm" name="logForm" autocomplete="off" >
+		<form method="get" name="logForm" autocomplete="off" >
 			<input class="u-ipt1" type="text" name="userName" id="user" placeholder="账号" required/>
 			<input class="u-ipt2" type="password" name="password" id="pass" placeholder="密码" required/>
-			<span class="z-err f-vh">账号或密码错误！</span>
-			<button type="submit" class="u-btn" name="submit">登录</button>
+			<p class="z-err f-vh"><span class="j-err">账号或密码错误!</span><span class="j-none f-dn">请完整填写账号和密码!</span></p>
+			<button type="button" class="u-btn" name="submit">登录</button>
 		</form>
 	</div>
 	<!-- /登录框 -->
@@ -193,6 +193,7 @@
 		</video>
 	</div>
 	<!-- /视频播放 -->
+	<script src="md5.js"></script>
 	<script src="index.js"></script>
 	<noscript>您的浏览器禁用了JavaScript</noscript>
 </body>
